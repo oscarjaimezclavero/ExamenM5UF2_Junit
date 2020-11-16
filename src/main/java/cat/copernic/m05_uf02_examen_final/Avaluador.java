@@ -59,7 +59,7 @@ public class Avaluador {
     public double mitjanaSiSupera(Estudiant estudiant) throws Exception {
         double sumaNotes = 0;
 
-        if (estudiant != null) {
+        if (estudiant == null) {
             throw new Exception("Estudiant no pot ser null");
         }
 
@@ -88,7 +88,7 @@ public class Avaluador {
     public double mitjana(Estudiant estudiant) throws Exception {
         double sumaNotes = 0;
 
-        if (estudiant != null) {
+        if (estudiant == null) {
             throw new Exception("Estudiant no pot ser null");
         }
 
@@ -113,7 +113,7 @@ public class Avaluador {
         double millorNota = 0;
 
         
-        for (int i = 0; i < n - 1; i++) {
+        for (int i = 0; i < n; i++) {
             try {
                 double nota = mitjana(estudiants[i]);
                 if (nota > millorNota) {
